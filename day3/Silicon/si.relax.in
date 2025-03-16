@@ -1,0 +1,26 @@
+ &control
+    prefix        = 'silicon',
+    calculation   = 'relax',
+    pseudo_dir    = '../../pseudo',
+    outdir        = './outdirs'
+    etot_conv_thr =   1.0000000000d-03
+    forc_conv_thr =   1.0000000000d-03
+ /
+ &system    
+    ibrav         = 2,
+    celldm(1)     = 10.2,
+    nat           = 2,
+    ntyp          = 1,
+    ecutwfc       = 30, 
+ /
+ &electrons
+ /
+ &ions
+ /
+ATOMIC_SPECIES
+ Si  28.086  Si.pz-vbc.UPF
+ATOMIC_POSITIONS alat
+ Si 0.00 0.00 0.00 0 0 0
+ Si 0.31 0.15 0.22
+K_POINTS automatic
+  3 3 3 1 1 1
