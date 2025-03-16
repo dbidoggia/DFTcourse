@@ -1,0 +1,38 @@
+&CONTROL
+  calculation = 'relax'
+  etot_conv_thr =   1.0d-03
+  forc_conv_thr =   1.0d-03
+  outdir = './outdirs'
+  prefix = 'h2o'
+  pseudo_dir = '../../pseudo'
+/
+&SYSTEM
+  degauss =   0.015
+  ecutrho =   160
+  ecutwfc =   20
+  ibrav = 0
+  nat = 3
+  nosym = .false.
+  ntyp = 2
+  occupations = 'smearing'
+  smearing = 'cold'
+/
+&ELECTRONS
+  conv_thr =   6.0d-6
+  electron_maxstep = 80
+  mixing_beta =   0.7
+/
+&IONS
+/
+ATOMIC_SPECIES
+H      1.00794 H.pbe-rrkjus_psl.1.0.0.UPF
+O      15.9994 O.pbe-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS angstrom
+O   0.00  0.00  0.00 0 0 0
+H   1.20  0.0  0.00
+H  -1.20  0.0  0.00
+K_POINTS gamma
+CELL_PARAMETERS angstrom
+   13.0  0.00  0.00
+   0.00  13.0  0.00
+   0.00  0.00  13.0
