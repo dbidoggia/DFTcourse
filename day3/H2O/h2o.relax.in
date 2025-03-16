@@ -8,8 +8,8 @@
 /
 &SYSTEM
   degauss =   0.015
-  ecutrho =   160
-  ecutwfc =   20
+  ecutrho =   480
+  ecutwfc =   60
   ibrav = 0
   nat = 3
   nosym = .false.
