@@ -4,6 +4,5 @@
     fildos = 'sidos.dat'
     !Emin   = 5.0,
     !Emax   = 20.0,
-    DeltaE = 0.01,
-    bz_sum = 'tetrahedra'
+    DeltaE = 0.1,
  /

@@ -10,7 +10,8 @@
     nat           = 2,
     ntyp          = 1,
     ecutwfc       = 60.0,
-    nbnd          = 8, 
+    !nbnd          = 8,
+    occupations   = 'tetrahedra'
  /
  &electrons
  /

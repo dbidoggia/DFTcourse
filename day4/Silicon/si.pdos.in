@@ -4,7 +4,5 @@
     filpdos='si.pdos'
     !Emin=5.0,
     !Emax=20.0,
-    DeltaE=0.01
-    ngauss = -1
-    degauss=0.015
+    DeltaE=0.1
  /
