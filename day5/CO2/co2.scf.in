@@ -1,0 +1,34 @@
+&CONTROL
+  calculation = 'scf'
+  etot_conv_thr =   1.0d-03
+  forc_conv_thr =   1.0d-03
+  outdir = './outdirs'
+  prefix = 'co2'
+  pseudo_dir = '../../pseudo'
+/
+&SYSTEM
+  ecutrho =   160
+  ecutwfc =   20
+  ibrav = 0
+  nat = 3
+  ntyp = 2
+/
+&ELECTRONS
+  conv_thr =   1.0d-6
+  electron_maxstep = 80
+  mixing_beta =   0.7
+/
+&IONS
+/
+ATOMIC_SPECIES
+C      12.0107 C.pz-kjpaw.UPF
+O      15.9994 O.pbe-rrkjus.UPF
+ATOMIC_POSITIONS angstrom
+C                5.0000000000        5.0000000000        5.0000000000    0   0   0
+O                6.1696310363        5.0001098552        5.0000000000
+O                3.8303689637        5.0001098552        5.0000000000
+K_POINTS gamma
+CELL_PARAMETERS angstrom
+   13.0  0.00  0.00
+   0.00  13.0  0.00
+   0.00  0.00  13.0

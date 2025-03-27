@@ -1,0 +1,14 @@
+&inputpp
+/
+&plot
+  nfile=3
+  weight(1)=1.0
+  weight(2)=-1.0
+  weight(3)=-1.0
+  filepp(1)='co2.chd'
+  filepp(2)='co.chd'
+  filepp(3)='o.chd'
+  iflag=3
+  output_format=5
+  fileout='co2.chdd.xsf'
+/

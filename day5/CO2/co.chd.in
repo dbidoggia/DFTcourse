@@ -1,0 +1,8 @@
+&inputpp
+   prefix='co',
+   outdir='./outdirs'
+   filplot="co.chd"
+   plot_num=0
+/
+&plot
+/

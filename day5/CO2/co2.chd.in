@@ -1,0 +1,12 @@
+&inputpp
+   prefix='co2',
+   outdir='./outdirs'
+   filplot="co2.chd"
+   plot_num=0
+/
+&plot
+  filepp(1)='co2.chd'
+  iflag=3
+  output_format=5
+  fileout='co2.chd.xsf'
+/
