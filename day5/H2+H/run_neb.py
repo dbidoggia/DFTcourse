@@ -7,7 +7,7 @@ end = 1.5
 step = 0.2
 
 for ii, xpos in  enumerate([round(start + i * step,2) for i in range(int((end - start) / step) + 1)]):
-    print(f'Calculation {ii+1}/{int((end - start) / step)+1}', end= '\r')
+    print(f'Calculation {ii+1}/{int((end - start) / step)+1}')
     with open(f'neb/h2+h_{ii}.in', 'w') as f:
         f.write(f"""
 &CONTROL
