@@ -1,0 +1,30 @@
+&CONTROL
+  outdir = './outdirs'
+  prefix = 'co'
+  pseudo_dir = '../../pseudo'
+/
+&SYSTEM
+  ecutrho =   160
+  ecutwfc =   20
+  ibrav = 0
+  nat = 2
+  ntyp = 2
+/
+&ELECTRONS
+  conv_thr =   1.0d-6
+  electron_maxstep = 80
+  mixing_beta =   0.7
+/
+&IONS
+/
+ATOMIC_SPECIES
+C      12.0107 C.pbe-rrkjus.UPF
+O      15.9994 O.pbe-rrkjus.UPF
+ATOMIC_POSITIONS angstrom
+C   0.00  0.00  0.00
+O   0.00  0.00  1.00  
+K_POINTS gamma
+CELL_PARAMETERS angstrom
+   13.0  0.00  0.00
+   0.00  13.0  0.00
+   0.00  0.00  13.0
