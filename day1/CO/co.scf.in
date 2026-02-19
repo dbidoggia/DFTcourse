@@ -1,4 +1,5 @@
 &CONTROL
+  calculation = 'scf'
   outdir = './outdirs'
   prefix = 'co'
   pseudo_dir = '../../pseudo'
