@@ -1,0 +1,27 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = './outdirs/'
+  prefix = 'cscl'
+  pseudo_dir = '../../pseudo/'
+/
+&SYSTEM
+  ecutrho =   320
+  ecutwfc =   40
+  ibrav = 1
+  celldm(1) = 7.8243
+  nat = 2
+  ntyp = 2
+/
+&ELECTRONS
+  conv_thr =   1.0d-6
+  electron_maxstep = 80
+  mixing_beta =   0.4
+/
+ATOMIC_SPECIES
+Cl     35.453       cl_pbesol_v1.4.uspp.F.UPF
+Cs     132.9054519  cs_pbesol_v1.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+Cs           0.0000000000       0.0000000000       0.0000000000
+Cl           0.5000000000       0.5000000000       0.5000000000
+K_POINTS automatic
+5 5 5 0 0 0

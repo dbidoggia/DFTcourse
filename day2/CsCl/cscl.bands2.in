@@ -1,0 +1,5 @@
+&bands
+    prefix  = 'cscl'
+    outdir='./outdirs/'
+    filband = 'cscl_bands.dat'
+ /
