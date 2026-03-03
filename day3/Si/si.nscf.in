@@ -1,0 +1,24 @@
+ &control
+    prefix        = 'silicon',
+    calculation   = 'nscf',
+    pseudo_dir    = '../../pseudo',
+    outdir        = './outdirs'
+ /
+ &system    
+    ibrav         = 2,
+    celldm(1)     = 10.2,
+    nat           = 2,
+    nbnd          = 8,
+    ntyp          = 1,
+    ntyp          = 1,
+    ecutwfc       = 50.0, 
+ /
+ &electrons
+ /
+ATOMIC_SPECIES
+ Si  28.086  Si.pz-vbc.UPF
+ATOMIC_POSITIONS alat
+ Si 0.00 0.00 0.00 
+ Si 0.25 0.25 0.25
+K_POINTS automatic
+  15 15 15 1 1 1

@@ -1,0 +1,24 @@
+ &control
+    prefix     = 'al_isol'
+    outdir     = './outdirs'
+    pseudo_dir = '../../pseudo',
+ /
+ &system    
+    ibrav      = 1,
+    celldm(1)  = 28,
+    nat        = 1,
+    ntyp       = 1,
+    ecutwfc    = 40.0, 
+    occupations= 'smearing',
+    smearing   = 'marzari-vanderbilt',
+    degauss    = 0.06,
+    nspin      = 2,
+    tot_magnetization = 1
+ /
+ &electrons
+ /
+ATOMIC_SPECIES
+ Al  26.98 Al.pz-vbc.UPF
+ATOMIC_POSITIONS alat
+ Al 0.00 0.00 0.00 
+K_POINTS gamma

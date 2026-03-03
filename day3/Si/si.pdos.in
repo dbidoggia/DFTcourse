@@ -1,0 +1,8 @@
+ &projwfc
+    prefix='silicon',
+    outdir='./outdirs'
+    filpdos='si'
+    !Emin=5.0,
+    !Emax=20.0,
+    DeltaE=0.1
+ /
