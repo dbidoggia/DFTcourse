@@ -1,0 +1,8 @@
+ &projwfc
+    prefix='co2',
+    outdir='./outdirs'
+    filpdos='co2'
+    !Emin=5.0,
+    !Emax=20.0,
+    DeltaE=0.1
+ /

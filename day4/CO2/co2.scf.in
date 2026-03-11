@@ -1,0 +1,31 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = './outdirs'
+  prefix = 'co2'
+  pseudo_dir = '../../pseudo/'
+/
+&SYSTEM
+  ecutrho =   240
+  ecutwfc =   30
+  ibrav = 0
+  nat = 3
+  nbnd = 16
+  ntyp = 2
+/
+&ELECTRONS
+  electron_maxstep = 80
+  mixing_beta =   0.4
+/
+ATOMIC_SPECIES
+C      12.011 C.pbe-rrkjus.UPF
+O      15.999 O.pbe-rrkjus.UPF
+ATOMIC_POSITIONS angstrom
+O            5.4275526099       4.9999999562       4.9999999562
+C            6.5999999424       4.9999999562       4.9999999562
+O            7.7724472747       4.9999999562       4.9999999562
+K_POINTS automatic
+1 1 1 0 0 0
+CELL_PARAMETERS angstrom
+     13.1999998846       0.0000000000       0.0000000000
+      0.0000000000       9.9999999126       0.0000000000
+      0.0000000000       0.0000000000       9.9999999126

@@ -1,0 +1,46 @@
+&CONTROL
+  calculation = 'vc-relax'
+  etot_conv_thr =   8.0000000000d-03
+  forc_conv_thr =   5.0000000000d-03
+  outdir = './outdirs/'
+  prefix = 'pt111'
+  pseudo_dir = '../../pseudo/'
+/
+&SYSTEM
+  assume_isolated = '2D'
+  degauss =   2.7500000000d-02
+  ecutrho =   180
+  ecutwfc =   20
+  ibrav = 0
+  nat = 8
+  ntyp = 1
+  occupations = 'smearing'
+  smearing = 'cold'
+/
+&ELECTRONS
+  conv_thr =   8.0000000000d-06
+  electron_maxstep = 80
+  mixing_beta =   4.0000000000d-01
+/
+&IONS
+/
+&CELL
+  cell_dofree = '2Dxy'
+  press =   0.0000000000d+00
+/
+ATOMIC_SPECIES
+Pt     195.084 pt_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS angstrom
+Pt           0.0000000000       1.6003333000       7.5000000000
+Pt           2.7718585800       1.6003333000       7.5000000000
+Pt           1.3859292900       4.0008332500       7.5000000000
+Pt           4.1577878700       4.0008332500       7.5000000000
+Pt           0.0000000000       0.0000000000       9.7632130600
+Pt           2.7718585800       0.0000000000       9.7632130600
+Pt           1.3859292900       2.4004999500       9.7632130600
+Pt           4.1577878700       2.4004999500       9.7632130600
+K_POINTS gamma
+CELL_PARAMETERS angstrom
+      5.5437171645       0.0000000000       0.0000000000
+      2.7718585823       4.8009998959       0.0000000000
+      0.0000000000       0.0000000000      17.2632130552

@@ -1,0 +1,45 @@
+&CONTROL
+  calculation = 'scf'
+  etot_conv_thr =   8.0000000000d-03
+  forc_conv_thr =   5.0000000000d-03
+  outdir = './outdirs'
+  prefix = 'pt111_slab_co_ontop'
+  pseudo_dir = '../../../pseudo/'
+/
+&SYSTEM
+  degauss =   2.7500000000d-02
+  ecutrho =   160
+  ecutwfc =   20
+  ibrav = 0
+  nat = 10
+  ntyp = 3
+  occupations = 'smearing'
+  smearing = 'cold'
+/
+&ELECTRONS
+  conv_thr =   1.0000000000d-05
+  electron_maxstep = 80
+  mixing_beta =   0.5
+/
+&IONS
+/
+ATOMIC_SPECIES
+Pt     195.084 pt_pbe_v1.4.uspp.F.UPF
+C      12.011 C.pbe-n-kjpaw_psl.0.1.UPF
+O      15.999 O.pbe-n-kjpaw_psl.0.1.UPF
+ATOMIC_POSITIONS angstrom
+Pt       0.00000000       1.43816891       6.57500000        0 0 0
+Pt       2.49098163       1.43816891       6.57500000        0 0 0
+Pt       1.24549081       3.59542228       6.57500000        0 0 0
+Pt       3.73647244       3.59542228       6.57500000        0 0 0
+Pt       0.00000000       0.00000000       8.60887798        0 0 0
+Pt       2.49098163       0.00000000       8.60887798        0 0 0
+Pt       1.24549081       2.15725337       8.60887798        0 0 0
+Pt       3.73647244       2.15725337       8.60887798        0 0 0
+O        1.24549081       0.00000000      10.45887798
+C        1.24549081       0.00000000       9.30853798        0 0 1
+K_POINTS gamma
+CELL_PARAMETERS angstrom
+4.981963253256692 0.0 0.0
+2.490981626628346 4.314506738040862 0.0
+0.0 0.0 17.03387798129583
