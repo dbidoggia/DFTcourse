@@ -1,0 +1,10 @@
+3           ! number of files then list of names of the files containing the 3D-FFT grid and their weights
+rho_grni
+1.0
+rho_ni
+-1.0
+rho_gr
+-1.0
+2000        ! number of points in the grid
+3           ! direction of the plot (1: x, 2: y, 3: z)
+1.0         ! window size for macroscopic average (in Angstrom)

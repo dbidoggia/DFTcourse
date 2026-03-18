@@ -1,0 +1,6 @@
+&inputpp
+   prefix = 'ni'
+   outdir = './out/'
+   filplot = 'rho_ni'
+   plot_num = 0
+/

@@ -1,0 +1,14 @@
+&inputpp
+/
+&plot
+   nfile = 3
+   weight(1) = 1.0
+   weight(2) = -1.0
+   weight(3) = -1.0
+   filepp(1) = 'rho_grni'
+   filepp(2) = 'rho_gr'
+   filepp(3) = 'rho_ni'
+   iflag = 3
+   output_format = 5
+   fileout = 'delta_rho.xsf'
+/

@@ -1,0 +1,6 @@
+&inputpp
+   prefix = 'grni'
+   outdir = './out/'
+   filplot = 'pot_grni'
+   plot_num = 11
+/

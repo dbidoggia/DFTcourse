@@ -1,0 +1,14 @@
+&inputpp
+   prefix = 'grni'
+   outdir = './out/'
+   filplot = 'stm'
+   plot_num = 5
+   sample_bias = 0.5
+/
+&plot
+   nfile = 1
+   filepp(1) = 'stm'
+   iflag = 3
+   output_format = 5
+   fileout = 'stm0.5.xsf'
+/

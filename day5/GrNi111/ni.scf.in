@@ -1,0 +1,48 @@
+&CONTROL
+  calculation = 'scf'
+  outdir = './out/'
+  prefix = 'ni'
+  pseudo_dir = '../../pseudo/'
+  tefield = .true.    ! apply a saw-like potential along direction edir
+  dipfield = .true.   ! apply a dipole correction to the potential
+/
+&SYSTEM
+  degauss =   2.7500000000d-02
+  ecutrho =   240
+  ecutwfc =   30
+
+  edir = 3         ! direction perpendicular to the surface (on which the saw-like potential is applied)
+  eamp = 0         ! amplitude of the saw-like potential (in Ry). 
+  emaxpos = 0.0    ! potential is applied in the region exmaxpos < z < emaxpos+eopreg
+  eopreg = 0.05    ! both emaxpos and eopreg are in fractional coordinates along edir
+
+  ibrav = 0
+  nat = 3
+  nspin = 2
+  ntyp = 1
+  occupations = 'smearing'
+  smearing = 'cold'
+  starting_magnetization(1) =   1.0000000000d-01
+  starting_magnetization(2) =   2.7777777778d-01
+  vdw_corr = 'grimme-d2'
+/
+&ELECTRONS
+  conv_thr =   2.0000000000d-09
+  electron_maxstep = 80
+  mixing_mode = 'local-TF'
+  mixing_beta =   4.0000000000d-01
+/
+&IONS
+/
+ATOMIC_SPECIES
+Ni     58.6934 ni_pbe_v1.4.uspp.F.UPF
+ATOMIC_POSITIONS crystal
+Ni               0.3333300000        0.3333300000        0.4155500000    0   0   0
+Ni               0.6666700000        0.6666700000        0.5000000000    0   0   0
+Ni               0.0000000000        0.0000000000        0.5844500000    0   0   0
+K_POINTS automatic
+5 5 1 0 0 0
+CELL_PARAMETERS angstrom
+      2.4890200000       0.0000000000       0.0000000000
+      1.2445100000       2.1555545505       0.0000000000
+      0.0000000000       0.0000000000      20.0000000000

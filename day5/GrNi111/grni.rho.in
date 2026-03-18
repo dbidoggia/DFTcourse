@@ -1,0 +1,6 @@
+&inputpp
+   prefix = 'grni'
+   outdir = './out/'
+   filplot = 'rho_grni'
+   plot_num = 0
+/
